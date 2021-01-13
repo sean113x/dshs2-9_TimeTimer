@@ -12,6 +12,10 @@ var ctx = canvas.getContext("2d");
 ctx.strokeStyle = "#ff0000";
 ctx.lineWidth = 90;
 
+var darkMode = $("#darkMode");
+var lightMode = $("#lightMode");
+
+const currentMode = localStorage.getItem("mode");
 
 btnPause.hide();
 
@@ -71,3 +75,37 @@ remainTime--;
 drawArc();
 }
 }
+
+var Body = {
+    setColor:function(color) {
+      document.querySelector('body').style.color=color;
+    },
+    setBackgroundColor:function(color) {
+      document.querySelector('body').style.backgroundColor=color;
+    }
+  }
+  function darkModeClick(){
+  Body.setBackgroundColor('black');
+  Body.setColor('white');
+  darkMode.hide();
+  lightMode.show();
+  localStorage.setItem("mode", "dark");
+} 
+
+  function lightModeClick(){
+  Body.setBackgroundColor('white');
+  Body.setColor('black');
+  darkMode.show();
+  lightMode.hide();
+  localStorage.setItem("mode", "light");
+} 
+
+function cookiemode(mode) {
+  if (mode==="dark") {
+    darkModeClick();
+  } else {
+    lightMode.hide();
+  }
+}
+
+cookiemode(currentMode);
