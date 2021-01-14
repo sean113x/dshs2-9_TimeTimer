@@ -110,7 +110,15 @@ function cookiemode(mode) {
 
 cookiemode(currentMode);
 
-function getChecklist(event) {
-  document.getElementById('result').innerText = 
-    event.target.value;
+function getChecklist() {
+  
+  const checklistNodeList
+  = document.getElementsByName('checklist');
+  
+  genderNodeList.forEach((node) => {
+    if(node.checked)  {
+      document.getElementById('result').innerText
+        = node.value;
+    }
+  }) 
 }
