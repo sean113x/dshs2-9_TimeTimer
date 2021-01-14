@@ -115,7 +115,7 @@ function getChecklist() {
   const checklistNodeList
   = document.getElementsByName('checklist');
   
-  genderNodeList.forEach((node) => {
+  checklist NodeList.forEach((node) => {
     if(node.checked)  {
       document.getElementById('result').innerText
         = node.value;
