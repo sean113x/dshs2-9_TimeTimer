@@ -31,9 +31,11 @@
 
         <div class="playController">
             <h3 class="controller">PineappleTimer</h3><br>
-            <h4>측정할 시간을 입력하세요(0-60분)</h4>
+            <h4>측정할 시간을 입력하세요(0-60분)</h4><br>
+            <h4>파인애플 타이머를 평가해주세요!</h4><br>
              <input type="radio" name="checklist" value="의견을 제출해 주셔서 감사합니다. 더욱 노력하는 파인애플 타이머가 되겠습니다." onclick="getChecklist(event)">만족
              <input type="radio" name="checklist" value="의견을 제출해 주셔서 감사합니다. 더욱 노력하는 파인애플 타이머가 되겠습니다." onclick="getChecklist(event)">불만족
+            <button onclick='getChecklist()'>제출</button>
             <div id='result'></div>
             <input id="minute" type="text" class="timeReceiver" name="receivedTime" value="0" size="2" onkeyup="getMinute(), clickPause()" onchange="handleChange(), getMinute()"/>
             <button id="play"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
