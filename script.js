@@ -109,3 +109,8 @@ function cookiemode(mode) {
 }
 
 cookiemode(currentMode);
+
+function getChecklist(event) {
+  document.getElementById('result').innerText = 
+    event.target.value;
+}
