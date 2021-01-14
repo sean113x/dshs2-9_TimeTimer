@@ -113,15 +113,14 @@ function getChecklist(){
 	alert('의견을 제출해 주셔서 감사합니다. 더욱 노력하는 파인애플 타이머가 되겠습니다.');
 }
 
-function getyellow(){
-if( == pineapple){
-   ctx.strokeStyle = "#f6ff00";
-}else if(어떤게 선택되었냐?? == 수박){
-   ctx.strokeStyle = "#f6ff00";
-}else if(어떤게 선택되었냐?? == 수박){
-   ctx.strokeStyle = "#f6ff00";
-}
+var yel = document.getElementById('gety').value;
+ctx.strokeStyle = "#f6ff00";
 
+var blu= document.getElementById('getbl').value;
+ctx.strokeStyle = "#2E9AFE";
+
+var bro= document.getElementById('getb').value;
+ctx.strokeStyle = "#B45F04";
 
 cookiemode(currentMode);
 
