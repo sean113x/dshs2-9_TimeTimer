@@ -108,5 +108,12 @@ function cookiemode(mode) {
   }
 }
 
+
+function getChecklist(){
+	alert('의견을 제출해 주셔서 감사합니다. 더욱 노력하는 파인애플 타이머가 되겠습니다.');
+}
+
 cookiemode(currentMode);
+
+
 
