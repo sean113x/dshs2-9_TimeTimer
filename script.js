@@ -113,6 +113,14 @@ function getChecklist(){
 	alert('의견을 제출해 주셔서 감사합니다. 더욱 노력하는 파인애플 타이머가 되겠습니다.');
 }
 
+ if(getyellow() == pineapple){
+   ctx.strokeStyle = "#f6ff00";
+}else if(getblue() == 블루오션){
+   ctx.strokeStyle = "#2E9AFE";
+}else if(getbrown() == 💩){
+   ctx.strokeStyle = "#8A4B08";
+}
+
 cookiemode(currentMode);
 
 
