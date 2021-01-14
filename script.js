@@ -11,7 +11,7 @@ var canvas = document.getElementById("remainTime");
 var ctx = canvas.getContext("2d");
 ctx.strokeStyle = "#f6ff00";
 ctx.fillStyle = 'red';
-ctx.lineWidth = 200;
+ctx.lineWidth = 50;
 
 var darkMode = $("#darkMode");
 var lightMode = $("#lightMode");
