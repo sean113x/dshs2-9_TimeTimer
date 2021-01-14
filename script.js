@@ -9,7 +9,7 @@ run =false;
 
 var canvas = document.getElementById("remainTime");
 var ctx = canvas.getContext("2d");
-ctx.strokeStyle = "#ff0000";
+ctx.strokeStyle = "#f6ff00";
 ctx.lineWidth = 90;
 
 var darkMode = $("#darkMode");
