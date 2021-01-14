@@ -110,15 +110,3 @@ function cookiemode(mode) {
 
 cookiemode(currentMode);
 
-function getChecklist() {
-  
-  const checklistNodeList
-  = document.getElementsByName('checklist');
-  
-  checklist NodeList.forEach((node) => {
-    if(node.checked)  {
-      document.getElementById('result').innerText
-        = node.value;
-    }
-  }) 
-}
