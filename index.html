@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="EUC-KR">
-    <title></title>
-    <script language="javascript">
-    function change(color)
-    {
-         document.bgColor = color;
-    }
- 
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -41,10 +32,9 @@
         <div class="playController">
             <h3 class="controller">PineappleTimer</h3><br>
             <h4>측정할 시간을 입력하세요(0-60분)</h4>
-             <input type="radio" name="bgColor" value="yellow" onclick="change(this.value)">노랑색
-             <input type="radio" name="bgColor" value="green" onclick="change(this.value)">초록색
-             <input type="radio" name="bgColor" value="red" onclick="change(this.value)">빨간색
-             <input type="radio" name="bgColor" value="blue" onclick="change(this.value)">파란색
+             <input type="radio" name="checklist" value="의견을 제출해 주셔서 감사합니다. 더욱 노력하는 파인애플 타이머가 되겠습니다." onclick="getChecklist(event)">만족
+             <input type="radio" name="checklist" value="의견을 제출해 주셔서 감사합니다. 더욱 노력하는 파인애플 타이머가 되겠습니다." onclick="getChecklist(event)">불만족
+            <div id='result'></div>
             <input id="minute" type="text" class="timeReceiver" name="receivedTime" value="0" size="2" onkeyup="getMinute(), clickPause()" onchange="handleChange(), getMinute()"/>
             <button id="play"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
